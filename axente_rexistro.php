@@ -6,7 +6,7 @@
     if ($nomeCompleto == "")
         print "<p>O campo nome completo está baleiro.</p>";
     else
-        print "<p>O valor recibido do campo nome completo é: $nomecomlpeto</p>";
+        print "<p>O valor recibido do campo nome completo é: $nomeCompleto</p>";
 
     $nomeUsr=htmlspecialchars(trim(strip_tags($_REQUEST['nomeUsr'])), ENT_QUOTES, "ISO-8859-1");
     if ($nomeUsr == "")
@@ -72,8 +72,8 @@
     else
         print "<p>O valor recibido do control sexo é: $sexo</p>";
 
-    $linguasEs= (isset($_REQUEST['linguasEs']))
-        ? $_REQUEST['linguasEs']
+    $linguasEs= (isset($_REQUEST['LinguasEs']))
+        ? $_REQUEST['LinguasEs']
         : "";
     if ($linguasEs == "")
         print "<p>Non se utilizou o control linguas estranxeiras.</p>";
